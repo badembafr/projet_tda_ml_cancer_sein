@@ -8,21 +8,6 @@ env/
 venv/
 *.egg-info/
 
-# Jupyter
-.ipynb_checkpoints
-*.ipynb
-
-# Data
-data/raw/*.csv
-data/processed/*
-
-# Models
-models/*.pkl
-models/*.h5
-
-# Reports
-reports/figures/*.png
-reports/figures/*.pdf
 
 # IDE
 .vscode/
