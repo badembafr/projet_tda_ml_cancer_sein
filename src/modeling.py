@@ -3,7 +3,7 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, 
                              f1_score, roc_auc_score, classification_report)
-from config import RANDOM_STATE, N_ESTIMATORS_RF, KNN_NEIGHBORS
+from .config import RANDOM_STATE, N_ESTIMATORS_RF, KNN_NEIGHBORS
 import joblib
 
 

@@ -1,13 +1,22 @@
-import sys
 import pandas as pd
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 
-sys.path.append('src')
-from dataset import load_and_prepare_data
-from modeling import train_random_forest, train_svm, train_knn, evaluate_model, save_model
-from plots import plot_confusion_matrix, plot_roc_curves
-from config import MODELS_PATH, FIGURES_PATH
+# imports depuis le package src avec __init__.py
+from src import (
+    load_and_prepare_data,
+    train_random_forest,
+    train_svm,
+    train_knn,
+    evaluate_model,
+    save_model,
+    plot_confusion_matrix,
+    plot_roc_curves,
+    config
+)
+
+MODELS_PATH = config.MODELS_PATH
+FIGURES_PATH = config.FIGURES_PATH
 
 
 def main():
